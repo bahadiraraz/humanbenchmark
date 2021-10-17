@@ -2,10 +2,9 @@
 
 This project is OpenCV based programs which are puzzle solvers for 7 different games for https://humanbenchmark.com/.
 
-
 made as tutorial content about opencv based Practical example of useful multiple image processing algorithms.
 
-
+bots are can reach levels that a human cannot :)
 
 used techniques:
    - Python
