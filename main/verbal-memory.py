@@ -10,7 +10,6 @@ import threading
 import keyboard
 
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
-flag = 1
 flag2 = True
 flag4 = False
 mouse = Controller()
@@ -22,7 +21,7 @@ mouse.click(Button.left, 1)
 
 
 def get_number():
-	global flag, flag2, flag4
+	global flag2, flag4
 	while True:
 		stc = mss.mss()
 		scr = stc.grab(
