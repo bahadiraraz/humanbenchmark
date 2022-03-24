@@ -85,8 +85,6 @@ while True:
 	lower_white = np.array([0, 0, 0], dtype=np.uint8)
 	upper_white = np.array([0, 0, 255], dtype=np.uint8)
 	white_mask = cv2.inRange(hsvframe, lower_white, upper_white)
-	# kernal = np.ones((4, 4), "uint8")
-	# white_mask = cv2.dilate(white_mask, kernal)
 	res_white = cv2.bitwise_and(frame, frame, mask=white_mask)
 	#detecting approximations of white boxes in the frame
 	countours = cv2.findContours(white_mask, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)[0]
